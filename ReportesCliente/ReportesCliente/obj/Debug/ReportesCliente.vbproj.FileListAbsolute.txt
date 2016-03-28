@@ -1,0 +1,70 @@
+C:\ReportesCliente\ReportesCliente\ReportesCliente\bin\ReportesCliente.dll
+C:\ReportesCliente\ReportesCliente\ReportesCliente\bin\ReportesCliente.pdb
+C:\ReportesCliente\ReportesCliente\ReportesCliente\bin\ReportesCliente.xml
+C:\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ResolveAssemblyReference.cache
+C:\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.Resources.resources
+C:\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.vbproj.GenerateResource.Cache
+C:\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.dll
+C:\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.xml
+C:\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.pdb
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\bin\ReportesCliente.dll
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\bin\ReportesCliente.pdb
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\bin\ReportesCliente.xml
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ResolveAssemblyReference.cache
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.Resources.resources
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.NewActiveReport1.resources
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.vbproj.GenerateResource.Cache
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.dll.licenses
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.dll
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.xml
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.pdb
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\bin\ReportesCliente.dll
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\bin\ReportesCliente.pdb
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\bin\ReportesCliente.xml
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\bin\ActiveReports3.dll
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.CentroCostosEmpleado.resources
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.CartaFiniquito.resources
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.PercepcionesMensualISNMEX.resources
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.DeduccionesMensualISNMEX.resources
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.ISNMEX.resources
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.DeduccionesMensualISN.resources
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.PercepcionesMensualISN.resources
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.ISN.resources
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.EmpresaMensual.resources
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.DeduccionesMensual.resources
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.PercepcionesMensual.resources
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.ExentosGravadosMensual.resources
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.Empresa.resources
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.NewActiveReport1.resources
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.NewActiveReport2.resources
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.NewActiveReport3.resources
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.Percepciones2.resources
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.Resources.resources
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.Deducciones.resources
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.Percepciones.resources
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.vbproj.GenerateResource.Cache
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.dll.licenses
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.dll
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.xml
+C:\Users\AliatecAdmin\Documents\trabajo\MC\Reportes Cliente\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.pdb
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\bin\ActiveReports3.dll
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.CartaFiniquito.resources
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.CentroCostosEmpleado.resources
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.EmpleadosporConcepto.resources
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.PercepcionesMensualISNMEX.resources
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.DeduccionesMensualISNMEX.resources
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.ISNMEX.resources
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.DeduccionesMensualISN.resources
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.PercepcionesMensualISN.resources
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.ISN.resources
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.EmpresaMensual.resources
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.DeduccionesMensual.resources
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.PercepcionesMensual.resources
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.ExentosGravadosMensual.resources
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.EmpresaGravadosExentosPeriodo.resources
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.GravadosExentosPeriodo.resources
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.NewActiveReport3.resources
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.Percepciones2.resources
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.DeduccionesGravadosExentosPeriodo.resources
+D:\Desarrollo\McGraw-Hill\ReportesCliente\ReportesCliente\ReportesCliente\obj\Debug\ReportesCliente.PercepcionesGravadosExentosPeriodo.resources

@@ -1,0 +1,1150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{137975FA-E5CC-447E-804D-6D7614C69D71}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ReportesCliente</RootNamespace>
+    <AssemblyName>ReportesCliente</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>ReportesCliente.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>ReportesCliente.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="ActiveReports.Viewer3, Version=5.2.1013.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ActiveReports.Web, Version=5.2.1013.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ActiveReports.XlsExport, Version=5.2.1013.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ActiveReports3, Version=5.2.1013.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intelexion.Framework, Version=4.9.9.9, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Intelexion.Nomina, Version=4.9.9.9, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Nomina, Version=4.9.9.9, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Anthem.dll" />
+    <Content Include="bin\C1.C1Excel.2.dll" />
+    <Content Include="bin\C1.C1Excel.2.xml" />
+    <Content Include="bin\en-US\Intelexion.Framework.resources.dll" />
+    <Content Include="bin\en-US\Nomina.resources.dll" />
+    <Content Include="bin\es-MX\Intelexion.Framework.resources.dll" />
+    <Content Include="bin\Intelexion.Aris.dll" />
+    <Content Include="bin\Intelexion.Compensacion.dll" />
+    <Content Include="bin\Intelexion.Contrato.dll" />
+    <Content Include="bin\Intelexion.Diagnostico.dll" />
+    <Content Include="bin\Intelexion.Framework.dll" />
+    <Content Include="bin\Intelexion.Framework.pdb" />
+    <Content Include="bin\Intelexion.Framework.View.UI.Controles.dll" />
+    <Content Include="bin\Intelexion.Framework.xml" />
+    <Content Include="bin\Intelexion.Inventario.dll" />
+    <Content Include="bin\Intelexion.ItxSyncInterface.dll" />
+    <Content Include="bin\Intelexion.Nomina.dll" />
+    <Content Include="bin\Intelexion.Nomina.pdb" />
+    <Content Include="bin\Intelexion.Nomina.xml" />
+    <Content Include="bin\Intelexion.OrganigramaGrafico.dll" />
+    <Content Include="bin\Intelexion.Organizacion.dll" />
+    <Content Include="bin\Intelexion.Reclutamiento.dll" />
+    <Content Include="bin\Microsoft.Web.UI.WebControls.dll" />
+    <Content Include="bin\Nomina.dll" />
+    <Content Include="bin\Nomina.pdb" />
+    <Content Include="bin\Nomina.xml" />
+    <Content Include="bin\pt-BR\Intelexion.Framework.resources.dll" />
+    <Content Include="bin\ReportesCliente.dll" />
+    <Content Include="bin\ReportesCliente.pdb" />
+    <Content Include="bin\ReportesCliente.xml" />
+    <Content Include="ReporteEtiquetas1.aspx" />
+    <Content Include="ReporteEtiquetas2.aspx" />
+    <Content Include="PolizaSuntory.aspx" />
+    <Content Include="Reporte29.aspx" />
+    <Content Include="Reporte28.aspx" />
+    <Content Include="Reporte27.aspx" />
+    <Content Include="Reporte26.aspx" />
+    <Content Include="Reporte25.aspx" />
+    <Content Include="Reporte24.aspx" />
+    <Content Include="Reporte23.aspx" />
+    <Content Include="Reporte14.aspx" />
+    <Content Include="Reporte15.aspx" />
+    <Content Include="Reporte16.aspx" />
+    <Content Include="Reporte17.aspx" />
+    <Content Include="Reporte18.aspx" />
+    <Content Include="Reporte19.aspx" />
+    <Content Include="Reporte20.aspx" />
+    <Content Include="Reporte21.aspx" />
+    <Content Include="Reporte22.aspx" />
+    <Content Include="Reporte13.aspx" />
+    <Content Include="Reporte11.aspx" />
+    <Content Include="Reporte9.aspx" />
+    <Content Include="Reporte8.aspx" />
+    <Content Include="Reporte7.aspx" />
+    <Content Include="Reporte6.aspx" />
+    <Content Include="obj\Debug\ReportesCliente.pdb" />
+    <Content Include="obj\Debug\ReportesCliente.vbproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\ReportesCliente.xml" />
+    <Content Include="obj\Release\reportescliente.dll.licenses" />
+    <Content Include="obj\Release\ReportesCliente.pdb" />
+    <Content Include="obj\Release\ReportesCliente.vbproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\ReportesCliente.xml" />
+    <Content Include="obj\Release\TempPE\My Project.Resources.Designer.vb.dll" />
+    <Content Include="obj\Release\TempPE\Resource1.Designer.vb.dll" />
+    <Content Include="Reporte1.aspx" />
+    <Content Include="Reporte2.aspx" />
+    <Content Include="Reporte3.aspx" />
+    <Content Include="Reporte4.aspx" />
+    <Content Include="Reporte5.aspx" />
+    <Content Include="ReporteConcentradoAnualAR_Visor.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ReporteEtiquetas1.aspx.designer.vb">
+      <DependentUpon>ReporteEtiquetas1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteEtiquetas1.aspx.vb">
+      <DependentUpon>ReporteEtiquetas1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="obj\Etiquetas1.Designer.vb">
+      <DependentUpon>Etiquetas1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Etiquetas1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\SubEtiquetas1.Designer.vb">
+      <DependentUpon>SubEtiquetas1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\SubEtiquetas1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReporteEtiquetas2.aspx.designer.vb">
+      <DependentUpon>ReporteEtiquetas2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteEtiquetas2.aspx.vb">
+      <DependentUpon>ReporteEtiquetas2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="obj\SubEtiquetas2.Designer.vb">
+      <DependentUpon>SubEtiquetas2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\SubEtiquetas2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\Etiquetas2.Designer.vb">
+      <DependentUpon>Etiquetas2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Etiquetas2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PolizaSuntory.aspx.designer.vb">
+      <DependentUpon>PolizaSuntory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PolizaSuntory.aspx.vb">
+      <DependentUpon>PolizaSuntory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="obj\PolizaSuntory.Designer.vb">
+      <DependentUpon>PolizaSuntory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\PolizaSuntory.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\PolizaSuntoryTotal.Designer.vb">
+      <DependentUpon>PolizaSuntoryTotal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\PolizaSuntoryTotal.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNJUCH.Designer.vb">
+      <DependentUpon>PercepcionesMensualISNJUCH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNJUCH.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte29.aspx.designer.vb">
+      <DependentUpon>Reporte29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte29.aspx.vb">
+      <DependentUpon>Reporte29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNLE.Designer.vb">
+      <DependentUpon>PercepcionesMensualISNLE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNLE.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\ISNLE.Designer.vb">
+      <DependentUpon>ISNLE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ISNLE.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte28.aspx.designer.vb">
+      <DependentUpon>Reporte28.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte28.aspx.vb">
+      <DependentUpon>Reporte28.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNHE.Designer.vb">
+      <DependentUpon>PercepcionesMensualISNHE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNHE.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\ISNHE.Designer.vb">
+      <DependentUpon>ISNHE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ISNHE.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte27.aspx.designer.vb">
+      <DependentUpon>Reporte27.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte27.aspx.vb">
+      <DependentUpon>Reporte27.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNQU.Designer.vb">
+      <DependentUpon>PercepcionesMensualISNQU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNQU.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\ISNQU.Designer.vb">
+      <DependentUpon>ISNQU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ISNQU.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte26.aspx.designer.vb">
+      <DependentUpon>Reporte26.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte26.aspx.vb">
+      <DependentUpon>Reporte26.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="obj\ISNJUCH.Designer.vb">
+      <DependentUpon>ISNJUCH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ISNJUCH.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte25.aspx.designer.vb">
+      <DependentUpon>Reporte25.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte25.aspx.vb">
+      <DependentUpon>Reporte25.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="obj\AcumuladodeConceptos.Designer.vb">
+      <DependentUpon>AcumuladodeConceptos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\AcumuladodeConceptos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte24.aspx.designer.vb">
+      <DependentUpon>Reporte24.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte24.aspx.vb">
+      <DependentUpon>Reporte24.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte23.aspx.designer.vb">
+      <DependentUpon>Reporte23.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte23.aspx.vb">
+      <DependentUpon>Reporte23.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte14.aspx.designer.vb">
+      <DependentUpon>Reporte14.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte14.aspx.vb">
+      <DependentUpon>Reporte14.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte15.aspx.designer.vb">
+      <DependentUpon>Reporte15.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte15.aspx.vb">
+      <DependentUpon>Reporte15.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte16.aspx.designer.vb">
+      <DependentUpon>Reporte16.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte16.aspx.vb">
+      <DependentUpon>Reporte16.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte17.aspx.designer.vb">
+      <DependentUpon>Reporte17.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte17.aspx.vb">
+      <DependentUpon>Reporte17.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte18.aspx.designer.vb">
+      <DependentUpon>Reporte18.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte18.aspx.vb">
+      <DependentUpon>Reporte18.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte19.aspx.designer.vb">
+      <DependentUpon>Reporte19.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte19.aspx.vb">
+      <DependentUpon>Reporte19.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte20.aspx.designer.vb">
+      <DependentUpon>Reporte20.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte20.aspx.vb">
+      <DependentUpon>Reporte20.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte21.aspx.designer.vb">
+      <DependentUpon>Reporte21.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte21.aspx.vb">
+      <DependentUpon>Reporte21.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte22.aspx.designer.vb">
+      <DependentUpon>Reporte22.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte22.aspx.vb">
+      <DependentUpon>Reporte22.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNPN.Designer.vb">
+      <DependentUpon>PercepcionesMensualISNPN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNPN.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\ISNPN.Designer.vb">
+      <DependentUpon>ISNPN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ISNPN.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNMTY.Designer.vb">
+      <DependentUpon>PercepcionesMensualISNMTY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNMTY.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\ISNMTY.Designer.vb">
+      <DependentUpon>ISNMTY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ISNMTY.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNSLP.Designer.vb">
+      <DependentUpon>PercepcionesMensualISNSLP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNSLP.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\ISNSLP.Designer.vb">
+      <DependentUpon>ISNSLP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ISNSLP.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNCAN.Designer.vb">
+      <DependentUpon>PercepcionesMensualISNCAN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNCAN.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\ISNCAN.Designer.vb">
+      <DependentUpon>ISNCAN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ISNCAN.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNMER.Designer.vb">
+      <DependentUpon>PercepcionesMensualISNMER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNMER.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\ISNMER.Designer.vb">
+      <DependentUpon>ISNMER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ISNMER.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNVE.Designer.vb">
+      <DependentUpon>PercepcionesMensualISNVE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNVE.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\ISNVE.Designer.vb">
+      <DependentUpon>ISNVE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ISNVE.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNGUA.Designer.vb">
+      <DependentUpon>PercepcionesMensualISNGUA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNGUA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\ISNGUA.Designer.vb">
+      <DependentUpon>ISNGUA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ISNGUA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNCUE.Designer.vb">
+      <DependentUpon>PercepcionesMensualISNCUE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNCUE.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\ISNCUE.Designer.vb">
+      <DependentUpon>ISNCUE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ISNCUE.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNAG.Designer.vb">
+      <DependentUpon>PercepcionesMensualISNAG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNAG.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\ISNAG.Designer.vb">
+      <DependentUpon>ISNAG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ISNAG.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNTI.Designer.vb">
+      <DependentUpon>PercepcionesMensualISNTI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNTI.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\ISNTI.Designer.vb">
+      <DependentUpon>ISNTI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ISNTI.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNMEX.Designer.vb">
+      <DependentUpon>PercepcionesMensualISNMEX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISNMEX.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\ISNMEX.Designer.vb">
+      <DependentUpon>ISNMEX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ISNMEX.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte13.aspx.designer.vb">
+      <DependentUpon>Reporte13.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte13.aspx.vb">
+      <DependentUpon>Reporte13.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="obj\PercepcionesEmpleadosPorConceptoUnutario.Designer.vb">
+      <DependentUpon>PercepcionesEmpleadosPorConceptoUnutario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\PercepcionesEmpleadosPorConceptoUnutario.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\EmpleadosporConceptoUnitario.Designer.vb">
+      <DependentUpon>EmpleadosporConceptoUnitario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\EmpleadosporConceptoUnitario.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\ImportesCentroCostos.Designer.vb">
+      <DependentUpon>ImportesCentroCostos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ImportesCentroCostos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\Deducciones.Designer.vb">
+      <DependentUpon>Deducciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Deducciones.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\Empresa.Designer.vb">
+      <DependentUpon>Empresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Empresa.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\NewActiveReport2.Designer.vb">
+      <DependentUpon>NewActiveReport2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\NewActiveReport2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\NewActiveReport4.Designer.vb">
+      <DependentUpon>NewActiveReport4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\NewActiveReport4.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\Percepciones.Designer.vb">
+      <DependentUpon>Percepciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Percepciones.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\PercepcionesEmpleadosPorConcepto.Designer.vb">
+      <DependentUpon>PercepcionesEmpleadosPorConcepto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\PercepcionesEmpleadosPorConcepto.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\PercepcionesProvisionesCentroCostos.Designer.vb">
+      <DependentUpon>PercepcionesProvisionesCentroCostos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\PercepcionesProvisionesCentroCostos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\ProvisionesCentroCostos.Designer.vb">
+      <DependentUpon>ProvisionesCentroCostos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ProvisionesCentroCostos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\ReporteConcentradoAnualAR.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte11.aspx.designer.vb">
+      <DependentUpon>Reporte11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte11.aspx.vb">
+      <DependentUpon>Reporte11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte9.aspx.designer.vb">
+      <DependentUpon>Reporte9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte9.aspx.vb">
+      <DependentUpon>Reporte9.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="obj\CentroCostosEmpleado.Designer.vb">
+      <DependentUpon>CentroCostosEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\CentroCostosEmpleado.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\Provisiones.Designer.vb">
+      <DependentUpon>Provisiones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Provisiones.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\ProvisionesPorEmpresa.Designer.vb">
+      <DependentUpon>ProvisionesPorEmpresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ProvisionesPorEmpresa.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\EmpleadosporConcepto.Designer.vb">
+      <DependentUpon>EmpleadosporConcepto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\EmpleadosporConcepto.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte8.aspx.designer.vb">
+      <DependentUpon>Reporte8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte8.aspx.vb">
+      <DependentUpon>Reporte8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="obj\Archivos.vb" />
+    <Compile Include="obj\DeduccionesMensualISNMEX.Designer.vb">
+      <DependentUpon>DeduccionesMensualISNMEX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\DeduccionesMensualISNMEX.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte7.aspx.designer.vb">
+      <DependentUpon>Reporte7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte7.aspx.vb">
+      <DependentUpon>Reporte7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="obj\DeduccionesMensualISN.Designer.vb">
+      <DependentUpon>DeduccionesMensualISN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\DeduccionesMensualISN.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISN.Designer.vb">
+      <DependentUpon>PercepcionesMensualISN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensualISN.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\ISN.Designer.vb">
+      <DependentUpon>ISN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ISN.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte6.aspx.designer.vb">
+      <DependentUpon>Reporte6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte6.aspx.vb">
+      <DependentUpon>Reporte6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="obj\CartaFiniquito.Designer.vb">
+      <DependentUpon>CartaFiniquito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\CartaFiniquito.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\EmpresaMensual.Designer.vb">
+      <DependentUpon>EmpresaMensual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\EmpresaMensual.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\DeduccionesMensual.Designer.vb">
+      <DependentUpon>DeduccionesMensual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\DeduccionesMensual.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensual.Designer.vb">
+      <DependentUpon>PercepcionesMensual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\PercepcionesMensual.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\ExentosGravadosMensual.Designer.vb">
+      <DependentUpon>ExentosGravadosMensual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ExentosGravadosMensual.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\EmpresaGravadosExentosPeriodo.Designer.vb">
+      <DependentUpon>EmpresaGravadosExentosPeriodo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\EmpresaGravadosExentosPeriodo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\NewActiveReport1.Designer.vb">
+      <DependentUpon>NewActiveReport1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\NewActiveReport1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\GravadosExentosPeriodo.Designer.vb">
+      <DependentUpon>GravadosExentosPeriodo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\GravadosExentosPeriodo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\NewActiveReport3.Designer.vb">
+      <DependentUpon>NewActiveReport3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\NewActiveReport3.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\Percepciones2.Designer.vb">
+      <DependentUpon>Percepciones2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Percepciones2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\DeduccionesGravadosExentosPeriodo.Designer.vb">
+      <DependentUpon>DeduccionesGravadosExentosPeriodo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\DeduccionesGravadosExentosPeriodo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\PercepcionesGravadosExentosPeriodo.Designer.vb">
+      <DependentUpon>PercepcionesGravadosExentosPeriodo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\PercepcionesGravadosExentosPeriodo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte1.aspx.vb">
+      <DependentUpon>Reporte1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte1.aspx.designer.vb">
+      <DependentUpon>Reporte1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reporte2.aspx.designer.vb">
+      <DependentUpon>Reporte2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte2.aspx.vb">
+      <DependentUpon>Reporte2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte3.aspx.designer.vb">
+      <DependentUpon>Reporte3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte3.aspx.vb">
+      <DependentUpon>Reporte3.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte4.aspx.designer.vb">
+      <DependentUpon>Reporte4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte4.aspx.vb">
+      <DependentUpon>Reporte4.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte5.aspx.designer.vb">
+      <DependentUpon>Reporte5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte5.aspx.vb">
+      <DependentUpon>Reporte5.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ReporteConcentradoAnualAR_Visor.aspx.designer.vb">
+      <DependentUpon>ReporteConcentradoAnualAR_Visor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteConcentradoAnualAR_Visor.aspx.vb">
+      <DependentUpon>ReporteConcentradoAnualAR_Visor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="obj\CartaFiniquito.resx">
+      <DependentUpon>CartaFiniquito.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\CentroCostosEmpleado.resx">
+      <DependentUpon>CentroCostosEmpleado.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\AcumuladodeConceptos.resx">
+      <DependentUpon>AcumuladodeConceptos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Etiquetas1.resx">
+      <DependentUpon>Etiquetas1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\SubEtiquetas1.resx">
+      <DependentUpon>SubEtiquetas1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\SubEtiquetas2.resx">
+      <DependentUpon>SubEtiquetas2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Etiquetas2.resx">
+      <DependentUpon>Etiquetas2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\PolizaSuntory.resx">
+      <DependentUpon>PolizaSuntory.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\PolizaSuntoryTotal.resx">
+      <DependentUpon>PolizaSuntoryTotal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\PercepcionesMensualISNJUCH.resx">
+      <DependentUpon>PercepcionesMensualISNJUCH.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\PercepcionesMensualISNLE.resx">
+      <DependentUpon>PercepcionesMensualISNLE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ISNLE.resx">
+      <DependentUpon>ISNLE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\PercepcionesMensualISNHE.resx">
+      <DependentUpon>PercepcionesMensualISNHE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ISNHE.resx">
+      <DependentUpon>ISNHE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\PercepcionesMensualISNQU.resx">
+      <DependentUpon>PercepcionesMensualISNQU.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ISNQU.resx">
+      <DependentUpon>ISNQU.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ISNJUCH.resx">
+      <DependentUpon>ISNJUCH.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\PercepcionesMensualISNPN.resx">
+      <DependentUpon>PercepcionesMensualISNPN.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ISNPN.resx">
+      <DependentUpon>ISNPN.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\PercepcionesMensualISNMTY.resx">
+      <DependentUpon>PercepcionesMensualISNMTY.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ISNMTY.resx">
+      <DependentUpon>ISNMTY.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\PercepcionesMensualISNSLP.resx">
+      <DependentUpon>PercepcionesMensualISNSLP.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ISNSLP.resx">
+      <DependentUpon>ISNSLP.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\PercepcionesMensualISNCAN.resx">
+      <DependentUpon>PercepcionesMensualISNCAN.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ISNCAN.resx">
+      <DependentUpon>ISNCAN.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\PercepcionesMensualISNMER.resx">
+      <DependentUpon>PercepcionesMensualISNMER.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ISNMER.resx">
+      <DependentUpon>ISNMER.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\PercepcionesMensualISNVE.resx">
+      <DependentUpon>PercepcionesMensualISNVE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ISNVE.resx">
+      <DependentUpon>ISNVE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\PercepcionesMensualISNGUA.resx">
+      <DependentUpon>PercepcionesMensualISNGUA.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ISNGUA.resx">
+      <DependentUpon>ISNGUA.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\PercepcionesMensualISNCUE.resx">
+      <DependentUpon>PercepcionesMensualISNCUE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ISNCUE.resx">
+      <DependentUpon>ISNCUE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\PercepcionesMensualISNAG.resx">
+      <DependentUpon>PercepcionesMensualISNAG.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ISNAG.resx">
+      <DependentUpon>ISNAG.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\PercepcionesMensualISNTI.resx">
+      <DependentUpon>PercepcionesMensualISNTI.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ISNTI.resx">
+      <DependentUpon>ISNTI.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\PercepcionesMensualISNMEX.resx">
+      <DependentUpon>PercepcionesMensualISNMEX.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ISNMEX.resx">
+      <DependentUpon>ISNMEX.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\PercepcionesEmpleadosPorConceptoUnutario.resx">
+      <DependentUpon>PercepcionesEmpleadosPorConceptoUnutario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\EmpleadosporConceptoUnitario.resx">
+      <DependentUpon>EmpleadosporConceptoUnitario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ImportesCentroCostos.resx">
+      <DependentUpon>ImportesCentroCostos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Deducciones.resx">
+      <DependentUpon>Deducciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Empresa.resx">
+      <DependentUpon>Empresa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\NewActiveReport2.resx">
+      <DependentUpon>NewActiveReport2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Percepciones.resx">
+      <DependentUpon>Percepciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\PercepcionesEmpleadosPorConcepto.resx">
+      <DependentUpon>PercepcionesEmpleadosPorConcepto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\PercepcionesProvisionesCentroCostos.resx">
+      <DependentUpon>PercepcionesProvisionesCentroCostos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Provisiones.resx">
+      <DependentUpon>Provisiones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ProvisionesCentroCostos.resx">
+      <DependentUpon>ProvisionesCentroCostos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ProvisionesPorEmpresa.resx">
+      <DependentUpon>ProvisionesPorEmpresa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\EmpleadosporConcepto.resx">
+      <DependentUpon>EmpleadosporConcepto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\DeduccionesMensualISNMEX.resx">
+      <DependentUpon>DeduccionesMensualISNMEX.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\DeduccionesMensualISN.resx">
+      <DependentUpon>DeduccionesMensualISN.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\PercepcionesMensualISN.resx">
+      <DependentUpon>PercepcionesMensualISN.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ISN.resx">
+      <DependentUpon>ISN.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\EmpresaMensual.resx">
+      <DependentUpon>EmpresaMensual.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\DeduccionesMensual.resx">
+      <DependentUpon>DeduccionesMensual.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\PercepcionesMensual.resx">
+      <DependentUpon>PercepcionesMensual.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ExentosGravadosMensual.resx">
+      <DependentUpon>ExentosGravadosMensual.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\EmpresaGravadosExentosPeriodo.resx">
+      <DependentUpon>EmpresaGravadosExentosPeriodo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\NewActiveReport1.resx">
+      <DependentUpon>NewActiveReport1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\GravadosExentosPeriodo.resx">
+      <DependentUpon>GravadosExentosPeriodo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\NewActiveReport3.resx">
+      <DependentUpon>NewActiveReport3.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Percepciones2.resx">
+      <DependentUpon>Percepciones2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\ReportesCliente.Resources.resources" />
+    <EmbeddedResource Include="obj\DeduccionesGravadosExentosPeriodo.resx">
+      <DependentUpon>DeduccionesGravadosExentosPeriodo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\PercepcionesGravadosExentosPeriodo.resx">
+      <DependentUpon>PercepcionesGravadosExentosPeriodo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ReporteConcentradoAnualAR.resx">
+      <DependentUpon>ReporteConcentradoAnualAR.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="obj\Release\ReportesCliente.vbproj.GenerateResource.Cache" />
+    <None Include="obj\Release\ResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\App_Data\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50262</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

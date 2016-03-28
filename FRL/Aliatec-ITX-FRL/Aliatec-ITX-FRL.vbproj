@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8F22B3E-6613-451B-9111-2F78F6ACA4A2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ITX.Aliatec</RootNamespace>
+    <AssemblyName>ITX.Aliatec</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>Off</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ITX.Aliatec.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42032,42036</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Web\bin\</OutputPath>
+    <DocumentationFile>ITX.Aliatec.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42032,42036</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiveReports.Viewer3, Version=5.2.1013.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referencias\ActiveReports.Viewer3.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports3, Version=5.2.1013.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referencias\ActiveReports3.dll</HintPath>
+    </Reference>
+    <Reference Include="Intelexion.Framework, Version=4.9.9.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\bin\Intelexion.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Intelexion.Nomina, Version=4.9.9.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\bin\Intelexion.Nomina.dll</HintPath>
+    </Reference>
+    <Reference Include="Nomina, Version=4.9.9.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\bin\Nomina.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Carta Finiquito\View\CartaFiniquito.Designer.vb">
+      <DependentUpon>CartaFiniquito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Carta Finiquito\View\CartaFiniquito.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Carta Finiquito\View\Deducciones.Designer.vb">
+      <DependentUpon>Deducciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Carta Finiquito\View\Deducciones.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Carta Finiquito\View\Empresa.Designer.vb">
+      <DependentUpon>Empresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Carta Finiquito\View\Empresa.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Carta Finiquito\View\Percepciones.Designer.vb">
+      <DependentUpon>Percepciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Carta Finiquito\View\Percepciones.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dispersion\DAO.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispersion\Dispersion.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispersion\EntitieDispersion.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispersion\EntitieReportesProceso.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispersion\Items.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Recbio Nomina\BPBB\BPBBReciboNomina.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Recbio Nomina\BPH\BPHReciboNomina.vb" />
+    <Compile Include="Recbio Nomina\DAO\ReciboNominaDAO.vb" />
+    <Compile Include="Recbio Nomina\View\LogoReciboNomina.vb" />
+    <Compile Include="Recbio Nomina\View\ReciboNomina.Designer.vb">
+      <DependentUpon>ReciboNomina.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Recbio Nomina\View\ReciboNomina.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Recbio Nomina\View\ReciboNomina16Deduccion.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Recbio Nomina\View\ReciboNomina16Percepcion.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Recbio Nomina\View\ReciboNominaSaldos21.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Carta Finiquito\View\CartaFiniquito.resx">
+      <DependentUpon>CartaFiniquito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Carta Finiquito\View\Deducciones.resx">
+      <DependentUpon>Deducciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Carta Finiquito\View\Empresa.resx">
+      <DependentUpon>Empresa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Carta Finiquito\View\Percepciones.resx">
+      <DependentUpon>Percepciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recbio Nomina\View\ReciboNomina.resx">
+      <DependentUpon>ReciboNomina.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recbio Nomina\View\ReciboNomina16Deduccion.resx">
+      <DependentUpon>ReciboNomina16Deduccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recbio Nomina\View\ReciboNomina16Percepcion.resx">
+      <DependentUpon>ReciboNomina16Percepcion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recbio Nomina\View\ReciboNominaSaldos21.resx">
+      <DependentUpon>ReciboNominaSaldos21.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Anthem.dll" />
+    <Content Include="bin\Debug\C1.C1Excel.2.dll" />
+    <Content Include="bin\Debug\C1.C1Excel.2.xml" />
+    <Content Include="bin\Debug\en-US\Intelexion.Framework.resources.dll" />
+    <Content Include="bin\Debug\en-US\Nomina.resources.dll" />
+    <Content Include="bin\Debug\es-MX\Intelexion.Framework.resources.dll" />
+    <Content Include="bin\Debug\Intelexion.Aris.dll" />
+    <Content Include="bin\Debug\Intelexion.Compensacion.dll" />
+    <Content Include="bin\Debug\Intelexion.Contrato.dll" />
+    <Content Include="bin\Debug\Intelexion.Diagnostico.dll" />
+    <Content Include="bin\Debug\Intelexion.Framework.dll" />
+    <Content Include="bin\Debug\Intelexion.Framework.pdb" />
+    <Content Include="bin\Debug\Intelexion.Framework.View.UI.Controles.dll" />
+    <Content Include="bin\Debug\Intelexion.Framework.xml" />
+    <Content Include="bin\Debug\Intelexion.Inventario.dll" />
+    <Content Include="bin\Debug\Intelexion.ItxSyncInterface.dll" />
+    <Content Include="bin\Debug\Intelexion.Nomina.dll" />
+    <Content Include="bin\Debug\Intelexion.Nomina.pdb" />
+    <Content Include="bin\Debug\Intelexion.Nomina.xml" />
+    <Content Include="bin\Debug\Intelexion.OrganigramaGrafico.dll" />
+    <Content Include="bin\Debug\Intelexion.Organizacion.dll" />
+    <Content Include="bin\Debug\Intelexion.Reclutamiento.dll" />
+    <Content Include="bin\Debug\ITX.Aliatec.dll" />
+    <Content Include="bin\Debug\ITX.Aliatec.pdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\ITX.Aliatec.xml" />
+    <Content Include="bin\Debug\Microsoft.Web.UI.WebControls.dll" />
+    <Content Include="bin\Debug\Nomina.dll" />
+    <Content Include="bin\Debug\Nomina.pdb" />
+    <Content Include="bin\Debug\Nomina.xml" />
+    <Content Include="bin\Debug\pt-BR\Intelexion.Framework.resources.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Poliza Contable\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
