@@ -19,12 +19,14 @@ Public Class Items
         newRow.Item("Case") = 100015
         Me.Rows.Add(newRow)
 
+     
+
         newRow = Me.NewRow()
-        newRow.Item("Label") = 100016
+        newRow.Item("Label") = 100017
         'accion
-        newRow.Item("Accion") = 100016
+        newRow.Item("Accion") = 100017
         'case del aspx
-        newRow.Item("Case") = 100016
+        newRow.Item("Case") = 100017
         Me.Rows.Add(newRow)
 
      

@@ -15,6 +15,7 @@ Public Class DAO
 
     Private Const LayoutSolicitudSantander As String = "sp_Reporte_BajasFondoAhorro '@IdRazonSocial','@IdTipoNominaAsig','@IdTipoNominaProc','@AnioDesde','@PeriodoDesde','@AnioHasta','@PeriodoHasta','@UID','@LID','@idAccion'"
     Private Const polizaPor As String = "spq_Reporte_logITXFortia '@IdRazonSocial','@folioDesde','@folioHasta','@UID','@LID','@idAccion'"
+    Private Const Cursos As String = "spq_Reporte_CursosFrialsa '@IdRazonSocial','@UID','@LID','@idAccion'"
 
 
 
@@ -31,6 +32,11 @@ Public Class DAO
 
                 Case "polizaPor"
                     comandstr = polizaPor
+                    resultado = Me.ExecuteQuery(comandstr, ds, ReportesProceso)
+                    Return ds
+
+                Case "Cursos"
+                    comandstr = Cursos
                     resultado = Me.ExecuteQuery(comandstr, ds, ReportesProceso)
                     Return ds
 
